@@ -11,10 +11,10 @@ a {
 	background-size:cover;
 	background-position:center;
 	width:100%;
-	height:1000px;
+	height:830px;
 }
 .join-buttom {
-	padding-top:550px;
+	/* padding-top:0px; */
 	padding-left:100px;
 }
 .join-buttom a {
