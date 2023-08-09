@@ -7,7 +7,7 @@ a {
 	text-decoration:none;
 }
 #banner {
-	background:url(../images/5dd404628e0e2e3ee9333fbb.png);
+	background:url(../images/bg.svg);
 	background-size:cover;
 	background-position:center;
 	width:100%;
@@ -19,23 +19,23 @@ a {
 }
 .join-buttom a {
 	padding:15px;
-	border:3px solid white;
-	color:white;
+	border:3px solid black;
+	color:black;
 	margin-right:15px;
 	float:left;
 	transition:0.4s;
 }
 .join-item {
 	font-size:30px;
-	color:white;
+	color:black;
 	padding-bottom:50px;
 }
 .join-item h2 {
 	margin-bottom:40px;
 }
 .join-buttom a:hover {
-	color:black;
-	background:white;
+	color:rgb(255, 0, 0);
+	background:black;
 }
 .item-page-box {
 	padding-top:10px;

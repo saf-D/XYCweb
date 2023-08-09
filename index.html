@@ -8,7 +8,13 @@
 	<title>首页 | MC-Inta服务器</title>
 	<link rel="stylesheet" type="text/css" href="static/css/main.css">
 	<link rel="shortcut icon" href="static/images/favicon.ico" type="image/x-icon">
-	<script src="static/js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+  function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+  }
+  window.addEventListener('load', addDarkmodeWidget);
+</script>
 	<style type="text/css">
 		.loading {
 			width: 100%;
@@ -72,11 +78,9 @@
 			overflow: hidden;
 		}
 	</style>
-	<!-- 引入 layui.css -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/layui/2.8.13/css/layui.css" rel="stylesheet">
-
-	<!-- 引入 layui.js -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/layui/2.8.13/layui.js"></script>
+	<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
 </head>
 <script>
 	document.onreadystatechange = function () {
@@ -96,9 +100,9 @@
 			<div class="menu-item">
 				<h2 class="logo"><a href="index.html">MC-Inta服务器</a></h2>
 				<div class="menu-item-list">
-					<a href="1.html" target="_blank">关于</a>
-					<a href="1.html">在线查询</a>
-					<a href="1.html" target="_blank">客户端</a>
+					<a href="wait.html" target="_blank">关于</a>
+					<a href="wait.html">在线查询</a>
+					<a href="wait.html" target="_blank">客户端</a>
 					<a href="index.html">首页</a>
 				</div>
 			</div>
@@ -125,6 +129,8 @@
 				<div carousel-item>
 				  <div><img src="static/images/marq1.png"></div>
 				  <div><img src="static/images/marq2.png"></div>
+				  <div><img src="static/images/marq3.png"></div>
+				  <div><img src="static/images/marq4.png"></div>
 				</div>
 			  </div>
 		</div> 
@@ -134,24 +140,25 @@
 				<h2>MC-Inta服务器</h2>
 				<p>小游戏、生存（正在配置）多种玩法，期待您的加入，版本不限！</p>
 			</div>
-			<h1><a href="1.html">加入我们</a></h1>
-			<h1><a href="1.html">在线查询</a></h1>
-			<h1><a href="#Server-IP" target="_self">服务器IP</a></h1>
+			<h1><a href="wait.html">加入我们</a></h1>
+			<h1><a href="wait.html">在线查询</a></h1>
+			<h1><a lay-on="test-skin-win10" onclick="copyIP('TheRadixProject.com')">服务器IP</a></h1> 
 		</div>
 	</div>
 	<div id="item-box">
-		<div class="box"><a href="1.html">&#9668&#9668 &nbsp; &nbsp;加入我们</a></div>
+		<div class="box"><a href="wait.html">&#9668&#9668 &nbsp; &nbsp;加入我们</a></div>
 		<div class="item-page-box">
 			<div class="item-page">
-				<h2 id="Server-IP">欢迎来到MC-Inta服务器</h2>
+				<h2>欢迎来到MC-Inta服务器</h2>
+				<p id="hitokoto"><a href="/" id="hitokoto_text">正在加载...</a></p>
 				<div class="item-font">
 					<img src="static/images/2.jpg" />
 					<h3>服务器简介</h3>
 					<p>腐竹：DKX114514</p>
 					<p>服务器目前暂时只有空岛战争小游戏...</p>
 					<h3>想加入服务器，应该怎么做？</h3>
-					<p>非常简单，您只需要阅读<a href="1.html" target="_blank">游戏规则</a>然后下载启动器输入IP即可游玩</p>
-					<p>了解规则后，<a href="1.html" target="_blank">我想加入游戏！</a></p>
+					<p>非常简单，您只需要阅读<a href="wait.html" target="_blank">游戏规则</a>然后下载启动器输入IP即可游玩</p>
+					<p>了解规则后，<a href="wait.html" target="_blank">我想加入游戏！</a></p>
 					<script>
 						layui.use(function () {
 							var layer = layui.layer;
@@ -169,12 +176,12 @@
 						});
 					</script>
 					<button type="button" class="layui-btn layui-btn-lg layui-btn-primary layui-btn-normal layui-btn-radius" lay-on="test-skin-win10">点这里获取IP</button>
-					<p>关于游戏方面的问题和知识，请阅读我们的《<a href="1.html" target="_blank">服务器指令</a>》。</p>
+					<p>关于游戏方面的问题和知识，请阅读我们的《<a href="wait.html" target="_blank">服务器指令</a>》。</p>
 					<h3>服务器规章制度</h3>
 					<p>在这里，我们一般不会限制玩家所以服务器规则准许的行为。</p>
 					<p>基本上只要您不会影响到其他玩家正常游戏，就不会受到整改。</p>
 					<p>如果影响到其他玩家正常游戏，我们将采取一定的方法进行整改（BAN-NAME or BAN-IP）。</p>
-					<p>详细的规章制度，请 <a href="1.html" target="_blank">点击这里查看</a> 。</p>
+					<p>详细的规章制度，请 <a href="wait.html" target="_blank">点击这里查看</a> 。</p>
 					<h3>稳定、可靠的服务器</h3>
 					<p>Intel(R) Xeon(R) CPU E5-2667 v2 @ 3.30GHz 处理器，超强性能，等你来战！</p>
 					<p>4H8G内存，高频内存</p>
@@ -212,5 +219,62 @@
 		});
 	</script>
 </body>
+<script>
+	if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
+		alert('朋友，上古浏览器不支持呢~');
+	}
 
+	window.onload = function () {
+	  let medusa = document.createElement('div');
+	  medusa.setAttribute('class', 'medusa');
+	  medusa.innerHTML = '' +
+		'<div><a onclick="goTop()" title="Top"><img class="pass" src="../static/images/top.png"></a></div>' +
+		'<div><a href="http://www.github.com/saf-D/IntaWeb/" title="Github" target="_blank"><img class="pass" src="../static/images/github.png"></a></div>' +
+		'<div><a href="wait.html" title="帮助" target="_blank"><img class="pass" src="../static/images/help.png"></a></div>';
+	  document.body.appendChild(medusa);
+	}
+  
+	function CheckImgExists(url) {
+	  let ImgObj = new Image();
+	  ImgObj.src = url;
+	  return ImgObj.width > 0;
+	}
+  
+	function goTop() {
+	  let scrollToTop = setInterval(function () {
+		let pos = window.pageYOffset;
+		if (pos > 0) {
+		  window.scrollTo(0, pos - 20);
+		} else {
+		  window.clearInterval(scrollToTop);
+		}
+	  }, 10);
+	}
+  </script>
+  <style>
+	.medusa {
+	  position: fixed;
+	  right: 1%;
+	  bottom: 15%;
+	  width: 50px;
+	  border: 1px solid #cdcccc;
+	  background-color: white;
+	  font-size: 20px;
+	  z-index: 1040;
+	  -webkit-backface-visibility: hidden;
+	}
+  
+	.medusa>div>a>img {
+	  width: 30px;
+	  height: 30px;
+	}
+  
+	.medusa>div {
+	  margin: 5px 0 5px 9px;
+	}
+  
+	.medusa>div>a {
+	  padding: 0 0 7px 0;
+	}
+  </style>
 </html>
